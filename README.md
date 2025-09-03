@@ -11,3 +11,5 @@ integrantes:
 - Matheus Henrique Araujo Miranda
 
 - Renan Aprigio Dias de Moura
+
+Tema do Projeto: Uma aplicação web do zero ao deploy com python + IA
