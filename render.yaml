@@ -2,6 +2,6 @@ services:
   - type: web
     name: meu-servico
     env: python
-    pythonVersion: 3.13.4
+    pythonVersion: 3.12.9
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
