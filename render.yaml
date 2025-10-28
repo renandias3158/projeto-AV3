@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: meu-servico
+    name: ChampionAi
     env: python
-    pythonVersion: 3.11.6
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-
+    pythonVersion: 3.11.9
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: gunicorn app:app
