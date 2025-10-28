@@ -1,11 +1,10 @@
-import pickle
+import joblib
 import numpy as np
 
-
-with open('modelo_dt.pkl', 'rb') as f:
-    modelo = pickle.load(f)
+modelo = joblib.load('modelo_dt.joblib')
 
 def prever(dados):
     entrada = np.array([dados])
     resultado = modelo.predict(entrada)
     return resultado[0]
+    
